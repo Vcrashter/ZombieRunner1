@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class EnemyAI : MonoBehaviour
 {
     [SerializeField] Transform target;
-    [SerializeField] float chaseDistance = 5f;
+    [SerializeField] float chaseDistance = 10f;
 
     NavMeshAgent navMeshAgent;
     float distanceToTarget = Mathf.Infinity;
@@ -16,7 +16,6 @@ public class EnemyAI : MonoBehaviour
         navMeshAgent = GetComponent<NavMeshAgent>();        
     }
 
-    // Update is called once per frame
     void Update()
     {
         distanceToTarget = Vector3.Distance(target.position, transform.position);
@@ -24,5 +23,11 @@ public class EnemyAI : MonoBehaviour
         {
             navMeshAgent.SetDestination(target.position);
         }
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, chaseDistance);
     }
 }
