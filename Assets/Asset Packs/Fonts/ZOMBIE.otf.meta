@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 58e2ce97c78c1cb4ab0ffff0a39232cb
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - ZOMBIE
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: c58dbd0c5ad757d409117c7798bbfd1c, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
