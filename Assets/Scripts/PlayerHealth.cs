@@ -11,7 +11,6 @@ public class PlayerHealth : MonoBehaviour
         hitPoint -= damage;
         if(hitPoint <= 0)
         {
-            
             Debug.Log("dEAD");
         }
     }

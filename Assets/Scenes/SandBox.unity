@@ -918,26 +918,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 764870848, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
-      propertyPath: hitEffect
-      value: 
-      objectReference: {fileID: 3856648536459382908, guid: 70a5dc2081e0ba44db356c276ff4004b, type: 3}
-    - target: {fileID: 764870848, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
-      propertyPath: muzzleFlash
-      value: 
-      objectReference: {fileID: 1498868279}
-    - target: {fileID: 5025769313370738516, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 5025769313370738516, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 5025769313370738516, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
 --- !u!1001 &1094443349
@@ -1160,11 +1140,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 4e11ef4f39bc65e44a4b0755ecac6ea1, type: 3}
   m_PrefabInstance: {fileID: 1266313133}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &1498868279 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 641915281962080847, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
-  m_PrefabInstance: {fileID: 967924751}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1593907487 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 44884af1ac1d64d42902da40268ba120, type: 3}
@@ -1346,6 +1321,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3713336181742583691, guid: 38cf711cbb744114798ad648afb30cd1, type: 3}
+      propertyPath: damage
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 3713336181742583691, guid: 38cf711cbb744114798ad648afb30cd1, type: 3}
       propertyPath: target
       value: 
