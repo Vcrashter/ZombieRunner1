@@ -26,7 +26,7 @@ public class WeaponSwitcher : MonoBehaviour
 
     void ProcessSceollWheel()
     {
-        if (Input.GetAxis("Mouse ScrollWheel") > 0)
+        if (Input.GetAxis("Mouse ScrollWheel") < 0)
         {
             if(currentWeapon >= transform.childCount - 1) //sunt 3 arme, daca ajunge la ultima atunci se intoarce la 0
             {
@@ -38,7 +38,7 @@ public class WeaponSwitcher : MonoBehaviour
             }
         }
 
-        if (Input.GetAxis("Mouse ScrollWheel") < 0)
+        if (Input.GetAxis("Mouse ScrollWheel") > 0)
         {
             if (currentWeapon <= 0) //sunt 3 arme, daca ajunge la ultima atunci se intoarce la 0
             {

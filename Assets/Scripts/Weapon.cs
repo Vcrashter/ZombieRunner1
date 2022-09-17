@@ -15,49 +15,54 @@ public class Weapon : MonoBehaviour
 
     bool canShoot = true;
 
-    void Update()
+    private void OnEnable()
     {
-        if(Input.GetButtonDown("Fire1") && canShoot == true)
-        {
-           StartCoroutine(Shoot());
-        }
-    }
-
-    IEnumerator Shoot()
-    {
-        canShoot = false;
-        if (ammoSlot.GetCurrentAmmo() > 0)
-        {
-            PlayMuzzleFlash();
-            ProcessRaycast();
-            ammoSlot.ReduceCurrentAmmo();
-            
-        }
-        yield return new WaitForSeconds(timeBetweenShots);
         canShoot = true;
     }
 
-    private void PlayMuzzleFlash()
-    {
-        muzzleFlash.Play();
-    }
+    //void Update()
+    //{
+    //    if(Input.GetButtonDown("Fire1") && canShoot == true)
+    //    {
+    //       StartCoroutine(Shoot());
+    //    }
+    //}
 
-    private void ProcessRaycast()
-    {
-        RaycastHit hit;
-        if (Physics.Raycast(FPCamera.transform.position, FPCamera.transform.forward, out hit, range))
-        {
-            CreateHitImpact(hit);
-            EnemyHealth target = hit.transform.GetComponent<EnemyHealth>();
-            if (target == null) return;
-            target.TakeDamage(damage);
-        }
-        else { return; }
-    }
+    //IEnumerator Shoot()
+    //{
+    //    canShoot = false;
+    //    if (ammoSlot.GetCurrentAmmo() > 0)
+    //    {
+    //        PlayMuzzleFlash();
+    //        ProcessRaycast();
+    //        ammoSlot.ReduceCurrentAmmo();
+            
+    //    }
+    //    yield return new WaitForSeconds(timeBetweenShots);
+    //    canShoot = true;
+    //}
 
-    private void CreateHitImpact(RaycastHit hit)
-    {
-        GameObject impact = Instantiate(hitEffect, hit.point, Quaternion.LookRotation(hit.normal));
-        Destroy(impact, 0.1f);
-    }
+    //private void PlayMuzzleFlash()
+    //{
+    //    muzzleFlash.Play();
+    //}
+
+    //private void ProcessRaycast()
+    //{
+    //    RaycastHit hit;
+    //    if (Physics.Raycast(FPCamera.transform.position, FPCamera.transform.forward, out hit, range))
+    //    {
+    //        CreateHitImpact(hit);
+    //        EnemyHealth target = hit.transform.GetComponent<EnemyHealth>();
+    //        if (target == null) return;
+    //        target.TakeDamage(damage);
+    //    }
+    //    else { return; }
+    //}
+
+    //private void CreateHitImpact(RaycastHit hit)
+    //{
+    //    GameObject impact = Instantiate(hitEffect, hit.point, Quaternion.LookRotation(hit.normal));
+    //    Destroy(impact, 0.1f);
+    //}
 }
