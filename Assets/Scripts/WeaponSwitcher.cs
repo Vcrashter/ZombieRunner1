@@ -9,14 +9,14 @@ public class WeaponSwitcher : MonoBehaviour
 
     void Start()
     {
-        SetWeaponActive();    
+        SetWeaponActive();
     }
     void Update()
     {
         int previousWeapon = currentWeapon;
 
         ProcessKeyInput();
-        ProcessSceollWheel();
+        ProcessScrollWheel();
 
         if(previousWeapon != currentWeapon)
         {
@@ -24,11 +24,11 @@ public class WeaponSwitcher : MonoBehaviour
         }
     }
 
-    void ProcessSceollWheel()
+    void ProcessScrollWheel()
     {
         if (Input.GetAxis("Mouse ScrollWheel") < 0)
         {
-            if(currentWeapon >= transform.childCount - 1) //sunt 3 arme, daca ajunge la ultima atunci se intoarce la 0
+            if (currentWeapon >= transform.childCount - 1) //sunt 3 arme, daca ajunge la ultima atunci se intoarce la 0
             {
                 currentWeapon = 0;
             }
@@ -84,6 +84,4 @@ public class WeaponSwitcher : MonoBehaviour
             weaponIndex++;
         }
     }
-
-
 }
