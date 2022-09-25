@@ -59,4 +59,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ammoAmount: 5
-  ammoType: 0
+  ammoType: 1
