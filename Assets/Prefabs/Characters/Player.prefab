@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.6, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -185,6 +185,7 @@ GameObject:
   - component: {fileID: 1775635955}
   - component: {fileID: 1210253141398803944}
   - component: {fileID: 5461017668547955584}
+  - component: {fileID: 8128515374007013444}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -352,6 +353,20 @@ MonoBehaviour:
     ammoAmount: 20
   - ammoType: 2
     ammoAmount: 8
+--- !u!114 &8128515374007013444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d99cb37bca72a84c95daff305dc6b35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impactCanvas: {fileID: 0}
+  impactTime: 0.3
 --- !u!1 &3118369772775476667
 GameObject:
   m_ObjectHideFlags: 0
