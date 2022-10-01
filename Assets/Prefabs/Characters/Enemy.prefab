@@ -149,7 +149,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4809a86dd9509b74fa839d4f40f9fe95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   chaseDistance: 15
   turnSpeed: 5
 --- !u!114 &828689469224755308
@@ -164,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68961f3ca1ea3f94cb9636e2f56f89a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 200
+  hitPoints: 100
 --- !u!114 &3713336181742583691
 MonoBehaviour:
   m_ObjectHideFlags: 0
