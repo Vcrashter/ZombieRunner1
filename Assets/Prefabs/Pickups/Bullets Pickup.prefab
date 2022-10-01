@@ -270,6 +270,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3969722304777801768, guid: f4e3838212744da4584af30bd8bd3a8a, type: 3}
+      propertyPath: ammoType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4385948356962660283, guid: f4e3838212744da4584af30bd8bd3a8a, type: 3}
       propertyPath: m_Mesh
       value: 
